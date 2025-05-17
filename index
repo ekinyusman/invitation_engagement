@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Undangan Majlis Pertunangan</title>
+<style>
+  body {
+    font-family: 'Georgia', serif;
+    background: #fcf7f0;
+    color: #4b3b2b;
+    padding: 20px;
+    max-width: 500px;
+    margin: 40px auto;
+    border: 2px solid #c8ad7f;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(200, 173, 127, 0.3);
+  }
+  h1, h2 {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    text-align: center;
+    color: #8b5e3c;
+  }
+  h1 {
+    margin-bottom: 0;
+  }
+  .bismillah {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #6b4f31;
+  }
+  p {
+    line-height: 1.6;
+    font-size: 1rem;
+    text-align: center;
+    margin: 8px 0;
+  }
+  .highlight {
+    font-weight: bold;
+    color: #a66e33;
+  }
+  .location, .date-time {
+    margin: 10px 0;
+  }
+  .links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .links a {
+    text-decoration: none;
+    color: #fff;
+    background: #a67c52;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 8px rgba(166,124,82,0.5);
+    transition: background 0.3s ease;
+  }
+  .links a:hover {
+    background: #8b5e3c;
+  }
+  .icon {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+  }
+  footer {
+    margin-top: 30px;
+    font-style: italic;
+    text-align: center;
+    color: #7b5e3b;
+  }
+  #music-btn {
+    display: block;
+    margin: 25px auto 0;
+    padding: 10px 25px;
+    background: #a67c52;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(166,124,82,0.5);
+    transition: background 0.3s ease;
+  }
+  #music-btn:hover {
+    background: #8b5e3c;
+  }
+</style>
+</head>
+<body>
+
+<div class="bismillah">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+
+<h1>💐 Undangan Majlis Pertunangan 💐</h1>
+
+<p>Dengan penuh rasa syukur ke hadrat Ilahi,<br/>
+kami sekeluarga dengan gembira menjemput<br/>
+<span class="highlight">Datin/Dato'/Tuan/Puan/Saudara/Saudari</span><br/>
+untuk hadir ke majlis yang penuh bermakna ini:</p>
+
+<h2>Majlis Pertunangan<br/>Kamal Hamizi & Siti Norasyikin</h2>
+
+<div class="date-time">
+  <p><span class="highlight">📅 Tarikh:</span> Ahad, 14 September 2025</p>
+  <p><span class="highlight">🕛 Masa:</span> 12.00 tengah hari</p>
+</div>
+
+<div class="location">
+  <p><span class="highlight">📍 Tempat:</span><br/>
+  Lot 245, Jalan Kejora 2D/1,<br/>
+  Kampung Melayu Tambahan, Rasa,<br/>
+  44200 Hulu Selangor, Selangor</p>
+</div>
+
+<div class="links">
+  <a href="https://waze.com/ul/hw287bxzvn" target="_blank" rel="noopener noreferrer" aria-label="Waze Link">
+    <!-- New simple Waze icon -->
+    <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2C8 2 5 6 5 10c0 1.9 1.1 4 2.5 5.5L12 22l4.5-6.5C18.9 14 20 11.9 20 10c0-4-3-8-8-8zM7 10a5 5 0 0110 0c0 2-1 3.5-2.5 4.5L12 18l-2.5-3.5C8 13.5 7 12 7 10z"/>
+    </svg>
+    Waze
+  </a>
+  <a href="https://maps.app.goo.gl/8iBjfsC34hFxLmSm9?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer" aria-label="Google Maps Link">
+    <!-- New simple Google Maps icon -->
+    <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M21 3l-6 2-5-2-5 2v16l6-2 5 2 5-2V3zm-5 12a4 4 0 11-4-4 4 4 0 014 4z"/>
+    </svg>
+    Google Maps
+  </a>
+</div>
+
+<button id="music-btn" aria-label="Play/Pause Music">▶️ Main Muzik</button>
+
+<!-- Change the src to your GitHub-hosted MP3 file URL -->
+<audio id="bg-music" src="https://your-username.github.io/your-repo-name/audio/8e3bdd69-bb4c-4d5a-bfb1-962751359961.mp3" preload="auto"></audio>
+
+<footer>
+  Kehadiran anda sekeluarga amat kami hargai.<br/>
+  Semoga majlis ini diberkati dan dirahmati Allah SWT.
+</footer>
+
+<script>
+  const musicBtn = document.getElementById('music-btn');
+  const bgMusic = document.getElementById('bg-music');
+  let isPlaying = false;
+
+  musicBtn.addEventListener('click', () => {
+    if (!isPlaying) {
+      bgMusic.play();
+      musicBtn.textContent = '⏸️ Henti Muzik';
+      isPlaying = true;
+    } else {
+      bgMusic.pause();
+      bgMusic.currentTime = 0;
+      musicBtn.textContent = '▶️ Main Muzik';
+      isPlaying = false;
+    }
+  });
+
+  bgMusic.addEventListener('ended', () => {
+    musicBtn.textContent = '▶️ Main Muzik';
+    isPlaying = false;
+  });
+</script>
+
+</body>
+</html>
